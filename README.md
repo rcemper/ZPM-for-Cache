@@ -14,8 +14,8 @@ The installation runs in 2 phases
 
 Open a terminal session like this
 ```
-USER>set dir= <your local download directory>
-USER>set prep="\src\%zrcc.xml"
+USER>set dir= <your local download directory>\src\
+USER>set prep="%zrcc.xml"
 USER>do $system.OBJ.Load(dir_prep,"ck")
 ```
 You may get a similar output
@@ -28,7 +28,7 @@ Load finished successfully.
 ```
 now you run the setup with the 2nd xml in the package
 ```
-%SYS>set xml="\src\ZPMcache.xml"
+%SYS>set xml="ZPMcache.xml"
 %SYS>do prepare^%zrcc(dir_xml)
  
 Load started on 11/27/2022 23:07:10
